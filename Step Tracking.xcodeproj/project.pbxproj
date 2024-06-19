@@ -12,6 +12,7 @@
 		F26F9A722C2221F10003B787 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F26F9A712C2221F10003B787 /* Assets.xcassets */; };
 		F26F9A752C2221F10003B787 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F26F9A742C2221F10003B787 /* Preview Assets.xcassets */; };
 		F26F9A982C23300D0003B787 /* HealthDataListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26F9A972C23300D0003B787 /* HealthDataListView.swift */; };
+		F26F9A9A2C2384E40003B787 /* HealthKitPermissionPrimingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26F9A992C2384E40003B787 /* HealthKitPermissionPrimingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		F26F9A712C2221F10003B787 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F26F9A742C2221F10003B787 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F26F9A972C23300D0003B787 /* HealthDataListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataListView.swift; sourceTree = "<group>"; };
+		F26F9A992C2384E40003B787 /* HealthKitPermissionPrimingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitPermissionPrimingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				F26F9A6D2C2221F00003B787 /* Step_TrackingApp.swift */,
 				F26F9A6F2C2221F00003B787 /* DashboardView.swift */,
+				F26F9A992C2384E40003B787 /* HealthKitPermissionPrimingView.swift */,
 				F26F9A972C23300D0003B787 /* HealthDataListView.swift */,
 				F26F9A712C2221F10003B787 /* Assets.xcassets */,
 				F26F9A732C2221F10003B787 /* Preview Content */,
@@ -143,6 +146,7 @@
 				F26F9A982C23300D0003B787 /* HealthDataListView.swift in Sources */,
 				F26F9A702C2221F00003B787 /* DashboardView.swift in Sources */,
 				F26F9A6E2C2221F00003B787 /* Step_TrackingApp.swift in Sources */,
+				F26F9A9A2C2384E40003B787 /* HealthKitPermissionPrimingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
