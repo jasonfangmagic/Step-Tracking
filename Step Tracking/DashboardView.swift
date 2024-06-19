@@ -8,7 +8,7 @@
 import SwiftUI
 
 enum HeaklthMetricContext: CaseIterable, Identifiable {
-    case  steps, weight
+    case steps, weight
     var id: Self {self}
     var title: String {
         switch self {
@@ -20,7 +20,7 @@ enum HeaklthMetricContext: CaseIterable, Identifiable {
     }
 }
 
-struct ContentView: View {
+struct DashboardView: View {
     
     @State private var selectedStat: HeaklthMetricContext = .steps
     var isSteps: Bool { selectedStat == .steps }
@@ -36,8 +36,7 @@ struct ContentView: View {
                     }
                     .pickerStyle(.segmented)
                     VStack {
-                        
-                        NavigationLink(value: selectedStat){
+                        NavigationLink(value: selectedStat ){
                             HStack{
                                 VStack(alignment: .leading) {
                                     Label("Steps", systemImage: "figure.walk")
@@ -91,7 +90,7 @@ struct ContentView: View {
             .padding()
             .navigationTitle("Dashboard")
             .navigationDestination(for: HeaklthMetricContext.self) { metric in
-                Text(metric.title)
+                HealthDataListView(metric: metric)
             }
         }
         .tint(isSteps ? .pink : .indigo)
@@ -100,5 +99,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    DashboardView()
 }
