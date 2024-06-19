@@ -48,8 +48,6 @@ struct HealthDataListView: View {
                         .frame(width: 140)
                         .keyboardType(metric == .steps ? .numberPad : .decimalPad)
                 }
-                
-               
             }
             .navigationTitle(metric.title)
             .toolbar{
@@ -60,7 +58,7 @@ struct HealthDataListView: View {
                 }
                 ToolbarItem(placement: .topBarLeading) {
                     Button("Dismiss"){
-                        isShowingAddData = false 
+                        isShowingAddData = false
                     }
                 }
             }
