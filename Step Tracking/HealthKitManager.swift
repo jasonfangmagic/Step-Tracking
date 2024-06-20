@@ -49,7 +49,7 @@ import Observation
         
 //        for steps in weights.statistics() {
 //            print(steps.mostRecentQuantity()?.doubleValue(for: .pound()) ?? 0)
-        }
+//        }
     }
     
 
