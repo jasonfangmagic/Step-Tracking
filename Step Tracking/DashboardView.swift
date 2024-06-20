@@ -21,7 +21,7 @@ enum HeaklthMetricContext: CaseIterable, Identifiable {
 }
 
 struct DashboardView: View {
-    
+    @Environment(HealthKitManager.self) private var hkManager
     @State private var selectedStat: HeaklthMetricContext = .steps
     var isSteps: Bool { selectedStat == .steps }
     @AppStorage("hasSeenPermissionPriming") private var hasSeenPermissionPriming = false
@@ -90,7 +90,7 @@ struct DashboardView: View {
                 
             }
             .padding()
-            .onAppear {
+            .task {
                 isShowingPermissionSheet = !hasSeenPermissionPriming
             }
             .navigationTitle("Dashboard")
