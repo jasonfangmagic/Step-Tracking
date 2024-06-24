@@ -14,6 +14,7 @@
 		F26F9A982C23300D0003B787 /* HealthDataListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26F9A972C23300D0003B787 /* HealthDataListView.swift */; };
 		F26F9A9A2C2384E40003B787 /* HealthKitPermissionPrimingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26F9A992C2384E40003B787 /* HealthKitPermissionPrimingView.swift */; };
 		F26F9A9D2C239B170003B787 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26F9A9C2C239B170003B787 /* HealthKitManager.swift */; };
+		F26F9AA12C2A12350003B787 /* HealthMetric.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26F9AA02C2A12350003B787 /* HealthMetric.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F26F9A992C2384E40003B787 /* HealthKitPermissionPrimingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitPermissionPrimingView.swift; sourceTree = "<group>"; };
 		F26F9A9B2C2399990003B787 /* Step Tracking.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Step Tracking.entitlements"; sourceTree = "<group>"; };
 		F26F9A9C2C239B170003B787 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		F26F9AA02C2A12350003B787 /* HealthMetric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthMetric.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				F26F9A9B2C2399990003B787 /* Step Tracking.entitlements */,
 				F26F9A6D2C2221F00003B787 /* Step_TrackingApp.swift */,
 				F26F9A6F2C2221F00003B787 /* DashboardView.swift */,
+				F26F9AA02C2A12350003B787 /* HealthMetric.swift */,
 				F26F9A992C2384E40003B787 /* HealthKitPermissionPrimingView.swift */,
 				F26F9A9C2C239B170003B787 /* HealthKitManager.swift */,
 				F26F9A972C23300D0003B787 /* HealthDataListView.swift */,
@@ -153,6 +156,7 @@
 				F26F9A6E2C2221F00003B787 /* Step_TrackingApp.swift in Sources */,
 				F26F9A9D2C239B170003B787 /* HealthKitManager.swift in Sources */,
 				F26F9A9A2C2384E40003B787 /* HealthKitPermissionPrimingView.swift in Sources */,
+				F26F9AA12C2A12350003B787 /* HealthMetric.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
