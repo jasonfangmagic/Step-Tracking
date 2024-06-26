@@ -29,14 +29,20 @@ import Observation
         
         let stepsQuery = HKStatisticsCollectionQueryDescriptor(predicate: samplePredicate, options: .cumulativeSum, anchorDate: endDate, intervalComponents: .init(day: 1))
         
-        let stepCounts = try! await stepsQuery.result(for: store)
-        stepData = stepCounts.statistics().map({ .init(date: $0.startDate, value: $0.sumQuantity()?.doubleValue(for: .count()) ?? 0)
+        
+        do {
+            let stepCounts = try! await stepsQuery.result(for: store)
+            stepData = stepCounts.statistics().map { .init(date: $0.startDate, value: $0.sumQuantity()?.doubleValue(for: .count()) ?? 0)
+            }
+        } catch {
             
-        })
+       }
+        
+    }
 //        for steps in stepCounts.statistics() {
 //            print(steps.sumQuantity() ?? 0)
 //        }
-    }
+    
     
     func fetchWeights() async {
         
@@ -50,10 +56,16 @@ import Observation
         
         let stepsQuery = HKStatisticsCollectionQueryDescriptor(predicate: samplePredicate, options: .mostRecent, anchorDate: endDate, intervalComponents: .init(day: 1))
         
-        let weights = try! await stepsQuery.result(for: store)
+        do{
+            let weights = try! await stepsQuery.result(for: store)
+            
+        weightData = weights.statistics().map { .init(date: $0.startDate, value: $0.mostRecentQuantity()?.doubleValue(for: .pound()) ?? 0)
+            }
+        } catch {
+            
+       }
         
-        weightData = weights.statistics().map({ .init(date: $0.startDate, value: $0.mostRecentQuantity()?.doubleValue(for: .pound()) ?? 0)
-        })
+        
     }
 //        for steps in weights.statistics() {
 //            print(steps.mostRecentQuantity()?.doubleValue(for: .pound()) ?? 0)
